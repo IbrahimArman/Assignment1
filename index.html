@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <!-- Header 1: Main Site Header -->
     <header class="main-header">
         <h3>Web Topics</h3>
         <div class="header-buttons">
@@ -17,12 +18,21 @@
         </div>
     </header>
 
-    <section>
-        <img src="images/title pic.png" alt="Welcome">
-    </section>
+        <!-- Second Header: Welcome Section -->
+        <div class="welcome-section">
+            <div class="colorful-bg">
+                <div class="green"></div>
+                <div class="blue"></div>
+            </div> <!-- Background layer for the gradient -->
+            <div class="welcome-content"> <!-- Content layer for the text -->
+                <h1 class="welcome-title">Welcome to our website!</h1>
+                <p class="welcome-subtitle">We have a new design that's fresh, modern, and easy to use.</p>
+            </div>
+        </div>
 
-    <nav class="nav-bar">
-        <input id="search" type="text" placeholder="Search the website...">
+    <div class="nav-bar">
+        <ion-icon class="icon" name="search" size="small"></ion-icon>
+     <input id="search" type="text" placeholder="Search the website..."> 
         <select>
             <option selected>Sort by: Default</option>
             <option>Sort by: Name</option>
@@ -33,23 +43,24 @@
             <option>Filter by: Author</option>
             <option>Filter by: Rating</option>
         </select>
-    </nav>
+    </div>
 
     <div>
         <h2>"24" Web Topics Found</h2>
     </div>
 
     <main>
+        
         <!-- Card 1 -->
         <div class="card">
             <img src="images/html.png" alt="Topic 1">
             <div class="card-content">
-                <div class="description">Web Development Languages</div>
-                <div class="topic-name">HTML</div>
+                <h4 class="description">Web Development Languages</h4>
+                <p class="topic-name">HTML</p>
                 <div class="rating">
                     <span class="stars">★★★★☆</span>
                 </div>
-                <div class="author">Author: Sarah Smith</div>
+                <p class="author">Author: Sarah Smith</p>
             </div>
         </div>
     
@@ -57,12 +68,12 @@
         <div class="card">
             <img src="images/css.png" alt="Topic 2">
             <div class="card-content">
-                <div class="description">Web Development Languages</div>
-                <div class="topic-name">CSS</div>
+                <h4 class="description">Web Development Languages</h4>
+                <p class="topic-name">CSS</p>
                 <div class="rating">
                     <span class="stars">★★★☆☆</span>
                 </div>
-                <div class="author">Author: David Lee</div>
+                <p class="author">Author: David Lee</p>
             </div>
         </div>
     
@@ -70,12 +81,12 @@
         <div class="card">
             <img src="images/javascript.jpg" alt="Topic 3">
             <div class="card-content">
-                <div class="description">Web Development Languages</div>
-                <div class="topic-name">JavaScript</div>
+                <h4 class="description">Web Development Languages</h4>
+                <p class="topic-name">JavaScript</p>
                 <div class="rating">
                     <span class="stars">★★★☆☆</span>
                 </div>
-                <div class="author">Author: Emily Chen</div>
+                <p class="author">Author: Emily Chen</p>
             </div>
         </div>
 
@@ -83,12 +94,12 @@
          <div class="card">
             <img src="images/jquery.png" alt="Topic 4">
             <div class="card-content">
-                <div class="description">Frontend Frameworks and Libraries</div>
-                <div class="topic-name">jQuery</div>
+                <h4 class="description">Frontend Frameworks and Libraries</h4>
+                <p class="topic-name">jQuery</p>
                 <div class="rating">
                     <span class="stars">★★★☆☆</span>
                 </div>
-                <div class="author">Author: John Johnson</div>
+                <p class="author">Author: John Johnson</p>
             </div>
         </div>
 
@@ -96,12 +107,12 @@
         <div class="card">
             <img src="images/angular.png" alt="Topic 5">
             <div class="card-content">
-                <div class="description">Frontend Frameworks and Libraries</div>
-                <div class="topic-name">Angular</div>
+                <h4 class="description">Frontend Frameworks and Libraries</h4>
+                <p class="topic-name">Angular</p>
                 <div class="rating">
                     <span class="stars">★★★☆☆</span>
                 </div>
-                <div class="author">Author: Jessica Davis</div>
+                <p class="author">Author: Jessica Davis</p>
             </div>
         </div>
 
@@ -109,12 +120,12 @@
         <div class="card">
             <img src="images/react.png" alt="Topic 6">
             <div class="card-content">
-                <div class="description">Frontend Frameworks and Libraries</div>
-                <div class="topic-name">React</div>
+                <h4 class="description">Frontend Frameworks and Libraries</h4>
+                <p class="topic-name">React</p>
                 <div class="rating">
                     <span class="stars">★★★☆☆</span>
                 </div>
-                <div class="author">Author: Daniel Brown</div>
+                <p class="author">Author: Daniel Brown</p>
             </div>
         </div>
 
@@ -122,12 +133,12 @@
         <div class="card">
             <img src="images/vuejs.jpeg" alt="Topic 7">
             <div class="card-content">
-                <div class="description">Frontend Frameworks and Libraries</div>
-                <div class="topic-name">Vue.js</div>
+                <h4 class="description">Frontend Frameworks and Libraries</h4>
+                <p class="topic-name">Vue.js</p>
                 <div class="rating">
                     <span class="stars">★★★☆☆</span>
                 </div>
-                <div class="author">Author: Ava Johnes</div>
+                <p class="author">Author: Ava Johnes</p>
             </div>
         </div>
 
@@ -135,12 +146,12 @@
         <div class="card">
             <img src="images/nodejs.png" alt="Topic 8">
             <div class="card-content">
-                <div class="description">Backend Frameworks and Libraries</div>
-                <div class="topic-name">Node.js</div>
+                <h4 class="description">Backend Frameworks and Libraries</h4>
+                <p class="topic-name">Node.js</p>
                 <div class="rating">
                     <span class="stars">★★★☆☆</span>
                 </div>
-                <div class="author">Author: Michael Kim</div>
+                <p class="author">Author: Michael Kim</p>
             </div>
         </div>
 
@@ -148,12 +159,12 @@
         <div class="card">
             <img src="images/expressjs.png" alt="Topic 9">
             <div class="card-content">
-                <div class="description">Backend Frameworks and Libraries</div>
-                <div class="topic-name">Express.js</div>
+                <h4 class="description">Backend Frameworks and Libraries</h4>
+                <p class="topic-name">Express.js</p>
                 <div class="rating">
                     <span class="stars">★★★☆☆</span>
                 </div>
-                <div class="author">Author: Sophia Rodriguez</div>
+                <p class="author">Author: Sophia Rodriguez</p>
             </div>
         </div>
 
@@ -161,29 +172,50 @@
         <div class="card">
             <img src="images/ruby.jpeg" alt="Topic 10">
             <div class="card-content">
-                <div class="description">Backend Frameworks and Libraries</div>
-                <div class="topic-name">Ruby on Rails</div>
+                <h4 class="description">Backend Frameworks and Libraries</h4>
+                <p class="topic-name">Ruby on Rails</p>
                 <div class="rating">
                     <span class="stars">★★★☆☆</span>
                 </div>
-                <div class="author">Author: William Lee</div>
+                <p class="author">Author: William Lee</p>
             </div>
         </div>
-          <!-- Card 4 -->
-          <div class="card">
-            <img src="images/jquery.png" alt="Topic 4">
-            <div class="card-content">
-                <div class="description">Frontend Frameworks and Libraries</div>
-                <div class="topic-name">jQuery</div>
-                <div class="rating">
-                    <span class="stars">★★★☆☆</span>
-                </div>
-                <div class="author">Author: John Johnson</div>
-            </div>
-        </div>
+       
     </main>
 
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        const darkModeButton = document.getElementById("darkbt");
+        const body = document.body;
+        const header = document.querySelector("header");
+        const cards = document.querySelectorAll(".card");
+        const navBar = document.querySelector(".nav-bar");
+    
+        // Function to toggle dark mode
+        function toggleDarkMode() {
+            body.classList.toggle("dark-mode");
+            header.classList.toggle("dark-mode");
+            navBar.classList.toggle("dark-mode");
+            
+            cards.forEach(card => {
+                card.classList.toggle("dark-mode");
+                const cardContent = card.querySelector(".card-content");
+                cardContent.classList.toggle("dark-mode");
+            });
+            
+            // Adjust button style based on mode
+            if (body.classList.contains("dark-mode")) {
+                darkModeButton.innerHTML = `<ion-icon name="sunny-outline"></ion-icon> Light Mode`; // Change button text
+            } else {
+                darkModeButton.innerHTML = `<ion-icon name="moon-outline"></ion-icon> Dark Mode`; // Revert button text
+            }
+        }
+    
+        // Add event listener to the button
+        darkModeButton.addEventListener("click", toggleDarkMode);
+    </script>
+    
+    <script src="index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
