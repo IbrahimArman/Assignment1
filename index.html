@@ -44,152 +44,20 @@
             <option>Filter by: Rating</option>
         </select>
     </div>
-
+    
     <div>
         <h2>"24" Web Topics Found</h2>
     </div>
 
-    <main>
-        
-        <!-- Card 1 -->
-        <div class="card">
-            <img src="images/html.png" alt="Topic 1">
-            <div class="card-content">
-                <h4 class="description">Web Development Languages</h4>
-                <p class="topic-name">HTML</p>
-                <div class="rating">
-                    <span class="stars">★★★★☆</span>
-                </div>
-                <p class="author">Author: Sarah Smith</p>
-            </div>
-        </div>
-    
-        <!-- Card 2 -->
-        <div class="card">
-            <img src="images/css.png" alt="Topic 2">
-            <div class="card-content">
-                <h4 class="description">Web Development Languages</h4>
-                <p class="topic-name">CSS</p>
-                <div class="rating">
-                    <span class="stars">★★★☆☆</span>
-                </div>
-                <p class="author">Author: David Lee</p>
-            </div>
-        </div>
-    
-        <!-- Card 3 -->
-        <div class="card">
-            <img src="images/javascript.jpg" alt="Topic 3">
-            <div class="card-content">
-                <h4 class="description">Web Development Languages</h4>
-                <p class="topic-name">JavaScript</p>
-                <div class="rating">
-                    <span class="stars">★★★☆☆</span>
-                </div>
-                <p class="author">Author: Emily Chen</p>
-            </div>
-        </div>
-
-         <!-- Card 4 -->
-         <div class="card">
-            <img src="images/jquery.png" alt="Topic 4">
-            <div class="card-content">
-                <h4 class="description">Frontend Frameworks and Libraries</h4>
-                <p class="topic-name">jQuery</p>
-                <div class="rating">
-                    <span class="stars">★★★☆☆</span>
-                </div>
-                <p class="author">Author: John Johnson</p>
-            </div>
-        </div>
-
-        <!-- Card 5 -->
-        <div class="card">
-            <img src="images/angular.png" alt="Topic 5">
-            <div class="card-content">
-                <h4 class="description">Frontend Frameworks and Libraries</h4>
-                <p class="topic-name">Angular</p>
-                <div class="rating">
-                    <span class="stars">★★★☆☆</span>
-                </div>
-                <p class="author">Author: Jessica Davis</p>
-            </div>
-        </div>
-
-        <!-- Card 6 -->
-        <div class="card">
-            <img src="images/react.png" alt="Topic 6">
-            <div class="card-content">
-                <h4 class="description">Frontend Frameworks and Libraries</h4>
-                <p class="topic-name">React</p>
-                <div class="rating">
-                    <span class="stars">★★★☆☆</span>
-                </div>
-                <p class="author">Author: Daniel Brown</p>
-            </div>
-        </div>
-
-        <!-- Card 7 -->
-        <div class="card">
-            <img src="images/vuejs.jpeg" alt="Topic 7">
-            <div class="card-content">
-                <h4 class="description">Frontend Frameworks and Libraries</h4>
-                <p class="topic-name">Vue.js</p>
-                <div class="rating">
-                    <span class="stars">★★★☆☆</span>
-                </div>
-                <p class="author">Author: Ava Johnes</p>
-            </div>
-        </div>
-
-        <!-- Card 8 -->
-        <div class="card">
-            <img src="images/nodejs.png" alt="Topic 8">
-            <div class="card-content">
-                <h4 class="description">Backend Frameworks and Libraries</h4>
-                <p class="topic-name">Node.js</p>
-                <div class="rating">
-                    <span class="stars">★★★☆☆</span>
-                </div>
-                <p class="author">Author: Michael Kim</p>
-            </div>
-        </div>
-
-        <!-- Card 9 -->
-        <div class="card">
-            <img src="images/expressjs.png" alt="Topic 9">
-            <div class="card-content">
-                <h4 class="description">Backend Frameworks and Libraries</h4>
-                <p class="topic-name">Express.js</p>
-                <div class="rating">
-                    <span class="stars">★★★☆☆</span>
-                </div>
-                <p class="author">Author: Sophia Rodriguez</p>
-            </div>
-        </div>
-
-        <!-- Card 10 -->
-        <div class="card">
-            <img src="images/ruby.jpeg" alt="Topic 10">
-            <div class="card-content">
-                <h4 class="description">Backend Frameworks and Libraries</h4>
-                <p class="topic-name">Ruby on Rails</p>
-                <div class="rating">
-                    <span class="stars">★★★☆☆</span>
-                </div>
-                <p class="author">Author: William Lee</p>
-            </div>
-        </div>
-       
-    </main>
-
+    <div class="container-of-cards" id="card"></div>
+ 
     <script>
         const darkModeButton = document.getElementById("darkbt");
         const body = document.body;
         const header = document.querySelector("header");
         const cards = document.querySelectorAll(".card");
         const navBar = document.querySelector(".nav-bar");
-    
+      
         // Function to toggle dark mode
         function toggleDarkMode() {
             body.classList.toggle("dark-mode");
@@ -215,7 +83,7 @@
     </script>
     
     <script src="index.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script type = "module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

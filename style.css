@@ -43,35 +43,35 @@ h3 {
     width: 100%; /* Full width */
     max-width: 1700px; /* Limit the max-width to resemble the image */
     margin: 0 auto; /* Center the nav bar */
-    padding: 10px 20px; /* Padding to give it more space inside */
+    /*padding: 10px 20px; /* Padding to give it more space inside */
     /*background-color: white; /* White background to match the reference */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    
 }
 
 .nav-bar input {
     width: 50%; /* Adjust width of the search bar */
     padding: 8px 10px;
    /* border: 1px solid var(--lines-color); /* Border to match the other elements */
-    border-radius: 5px; /* Rounded input field */
+    /*border-radius: 5px; /* Rounded input field */
+    
 }
 
 .nav-bar select {
     padding: 8px 10px;
-    border: 1px solid var(--lines-color);
-    border-radius: 5px;
+    /*border: 1px solid var(--lines-color);*/
+    /*border-radius: 5px;*/
     background-color: var(--bg_default);
     color: var(--body-text);
-    margin-left: 10px; /* Space between the selects */
+    border: none;
 }
 
 ion-icon {
     margin-right: 10px; /* Space between icon and input */
+    margin-left: 10px;
     font-size: 18px; /* Adjust icon size */
 }
-
-
-
 
 /* General button styles */
 .header-buttons button {
@@ -172,41 +172,13 @@ main {
     }
 }
 
-/* Additional styling for card content */
-.description {
-    font-size: 12px; /* Adjusted font size */
-    color: #555;
-    margin: 5px 0; /* Adjusted margin */
-}
-
-.topic-name {
-    font-size: 16px; /* Adjusted font size */
-    font-weight: bold;
-    color: var(--body-text);
-    margin-bottom: 5px; /* Adjusted margin */
-}
-
-
-.rating {
-    margin: 5px 0; /* Adjusted margin */
-}
-
-.stars {
-    color: #ffcc00;
-    font-size: 16px;
-}
-
-.author {
-    font-size: 12px; /* Adjusted font size */
-    color: #777;
-    margin-top: 10px; /* Adjusted margin */
-}
 
 .colorful-bg {
     height: 75px;
     position: relative;
     overflow: hidden;
 }
+
 .colorful-bg div {
     height: 100%;
     width: 100%;
@@ -312,3 +284,74 @@ header.dark-mode {
 .author.dark-mode {
     color: var(--body-text);
 }
+
+.course {
+    border: 0;
+    padding: 0;
+    margin: 10px 0;
+    border-radius: 12px;
+    background-color: var(--bg_default);
+    overflow: hidden;
+}
+
+.course img {
+    width: 100%;
+    height: 50%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+}
+
+.container-of-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Adjust columns */
+    gap: 20px;
+    /* Space between the cards */
+    padding: 20px;
+}
+
+.course category{
+    font-size: 12px;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Additional styling for card content */
+.description {
+    font-size: 12px;
+    /* Adjusted font size */
+    color: #555;
+    margin: 5px 0;
+    /* Adjusted margin */
+}
+
+.topic-name {
+    font-size: 16px;
+    /* Adjusted font size */
+    font-weight: bold;
+    color: var(--body-text);
+    margin-bottom: 5px;
+    /* Adjusted margin */
+}
+
+.rating {
+    margin: 5px 0;
+    /* Adjusted margin */
+}
+
+.stars {
+    color: #ffcc00;
+    font-size: 16px;
+}
+
+.author {
+    font-size: 12px;
+    /* Adjusted font size */
+    color: #777;
+    margin-top: 10px;
+    /* Adjusted margin */
+}
+ .welcome-subtitle{
+    padding-bottom: 15px;
+ }
