@@ -8,31 +8,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<!-- Header 1: Main Site Header -->
+<header class="main-header">
+    <h3>Web Topics</h3>
+    <div class="header-buttons">
+        <button id="darkbt"><ion-icon name="moon-outline"></ion-icon>Dark Mode</button>
+        <button id="favbt"><ion-icon name="heart-outline"></ion-icon>Favorites</button>
+    </div>
+</header>
+
+<div class="welcome-section"> <!-- Second Header: Welcome Section -->
+    <div class="colorful-bg">
+        <div class="green"></div>
+        <div class="blue"></div>
+    </div> 
+    <div class="welcome-content"> 
+        <h1 class="welcome-title">Welcome to our website!</h1>
+        <p class="welcome-subtitle">We have a new design that's fresh, modern, and easy to use.</p>
+    </div>
+</div>
+
 <body>
-    <!-- Header 1: Main Site Header -->
-    <header class="main-header">
-        <h3>Web Topics</h3>
-        <div class="header-buttons">
-            <button id="darkbt"><ion-icon name="moon-outline"></ion-icon>Dark Mode</button>
-            <button id="favbt"><ion-icon name="heart-outline"></ion-icon>Favorites</button>
-        </div>
-    </header>
-
-        <!-- Second Header: Welcome Section -->
-        <div class="welcome-section">
-            <div class="colorful-bg">
-                <div class="green"></div>
-                <div class="blue"></div>
-            </div> <!-- Background layer for the gradient -->
-            <div class="welcome-content"> <!-- Content layer for the text -->
-                <h1 class="welcome-title">Welcome to our website!</h1>
-                <p class="welcome-subtitle">We have a new design that's fresh, modern, and easy to use.</p>
-            </div>
-        </div>
-
     <div class="nav-bar">
-        <ion-icon class="icon" name="search" size="small"></ion-icon>
-     <input id="search" type="text" placeholder="Search the website..."> 
+        
+     <input id="search" type="text" placeholder="Search the website..." ></input>
         <select>
             <option selected>Sort by: Default</option>
             <option>Sort by: Name</option>
@@ -45,11 +44,13 @@
         </select>
     </div>
     
-    <div>
+    <div id="topics-found">
         <h2>"24" Web Topics Found</h2>
     </div>
 
     <div class="container-of-cards" id="card"></div>
+
+    <footer>Copyright and stuff</footer>
  
     <script>
         const darkModeButton = document.getElementById("darkbt");

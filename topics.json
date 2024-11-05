@@ -531,7 +531,7 @@
     "rating": 3.99,
     "name": "Madison Davis",
     "image": "ci-cd.jpeg",
-    "topic": "Continuous Integration/Continuous Deployment (CI/CD)",
+    "topic": "Continuous Integration/Continuous Deployment",
     "description": "Continuous Integration/Continuous Deployment (CI/CD) is a set of practices that combines the processes of building, testing, and deploying code changes automatically and frequently. This helps to ensure that code changes are of high quality and are released more quickly and reliably.",
     "subtopics": [
       "Automated testing",

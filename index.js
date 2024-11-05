@@ -75,7 +75,7 @@ function renderCourses(courses) {
       <div class = "course-text"> 
       <p class="category"><strong></strong> ${course.category}</p>
       <p class="topic"><strong></strong> ${course.topic}</p>
-      <p class="rating"><strong>${course.rating}</strong> </p>
+      <span class="rating">★★★★☆</span>
       <p class="name">Author : ${course.name}</p>
       </div>
     `;
